@@ -17,7 +17,8 @@ const int childPrice = 10;
 const int adultPrice = 20;
 const double seniorPrice = adultPrice * .9;
 const double taxModifier = .07; 
-//continue to loop through ages, append that to groupcost, stop when 0
+//continue to loop through ages, append that to groupcost,
+// stop when 0 is entered and add taxes to groupCost
 do {
 
 //loop checks prevents non-zero ages to be submitted 
