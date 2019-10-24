@@ -22,25 +22,6 @@ do {
 while (customerAge != 0);
 
 
-if ( customerAge < 2){
-	price = 1;
-}
-else if (customerAge >= 2 && customerAge <= 10) {
-	price = 10;
-}
-else if (customerAge >= 10 && customerAge <= 59){
-	price = 20;
-}
-else if (customerAge >= 60){
-	price = 20 * .9;
-}
-afterTaxes = (price * .07) + price;
-cout << "this person costs " << afterTaxes << endl;
-}
-
-finalTotal = finalTotal + afterTaxes;
-cout << "finaltotal is " << finalTotal << endl;
-
 return 0;
 
 }
