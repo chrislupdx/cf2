@@ -12,15 +12,28 @@ int main(){
 
 int customerAge, groupNumber;
 double finalTotal, price, afterTaxes;
+const int infantPrice = 1;
 
-//loop checks for customer age, using 0 as the escape condition 
+//loop checks prevents non-zero ages to be submitted 
 do {
    cout << "admissions fair calculator" << endl;
    cout << "customer age?" << endl;
    cin >> customerAge;
-}
-while (customerAge != 0);
+   }
+while (customerAge < 0);
 
+//loop detirmines cost based on age
+if (customerAge < 2)
+{
+	price = infantPrice;
+	cout << "price for this person is " << price << endl;
+}
+//applies tax to calculated age
+
+//appends cost to group
+
+finalTotal = customerAge;
+cout << "finalTotal is " << finalTotal << endl; 
 
 return 0;
 
