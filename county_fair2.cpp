@@ -16,7 +16,7 @@ const int infantPrice = 1;
 const int childPrice = 10;
 const int adultPrice = 20;
 const double seniorPrice = adultPrice * .9;
-
+const double taxModifier = .07; 
 //continue to loop through ages, append that to groupcost, stop when 0
 do {
 
@@ -58,12 +58,14 @@ else if (customerAge >= 60)
 	cout << "price for this person is " << price << endl;
 
 //appends cost to group
-
 groupCost = groupCost + price;
 cout << "groupCost is " << groupCost << endl; 
 }
 while (customerAge != 0);
 
+
+afterTaxes = (groupCost * taxModifier) + groupCost;
+cout << "final cost with taxes is " << afterTaxes << endl;
 return 0;
 
 }
